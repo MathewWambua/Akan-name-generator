@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Akan Name Generator</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Akan Name Generator</h1>
-    <p>Enter your birthdate and select your gender to find your Akan name.</p>
-    
-    <form id="akanForm">
-      <label for="birthdate">Birthdate:</label>
-      <input type="date" id="birthdate" required />
 
-      <p>Select Gender:</p>
-      <label><input type="radio" name="gender" value="male" required /> Male</label>
-      <label><input type="radio" name="gender" value="female" required /> Female</label>
+  <h1>Akan Name Generator</h1>
+  <p>Find your traditional Akan name based on your birthday and gender!</p>
 
-      <button type="submit">Get Akan Name</button>
-    </form>
+  <form id="akan-form">
+    <label for="birthdate">Enter your birthdate:</label>
+    <input type="date" id="birthdate" required>
 
-    <p id="result"></p>
-  </div>
+    <label>Select your gender:</label>
+    <div>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
 
-  <script src="./script.js"></script>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+
+    <button type="submit">Get Akan Name</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
